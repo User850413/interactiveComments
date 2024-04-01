@@ -23,7 +23,7 @@
     <div class="wrap">
       <main class="container">
         <div class="item">
-          <div class="comment">
+          <div class="object comment">
             <div class="contents">
               <div class="profile">
                 <span class="prof__img"></span>
@@ -49,53 +49,134 @@
               <span class="minus">-</span>
             </div>
           </div>
-          <div class="comment reply">
-            <div class="contents">
-              <div class="profile">
-                <span class="prof__img"></span>
-                <span class="prof__name"></span>
-                <span class="prof__createdAt"></span>
-                <button class="reply">
-                  <i class="fa-solid fa-reply"></i>
-                  <span>Reply</span>
-                </button>
+          <!--  -->
+          <div class="replies-section">
+            <div class="replies">
+              <div class="comment reply">
+                <div class="contents">
+                  <div class="profile">
+                    <span class="prof__img"></span>
+                    <span class="prof__name">sample name</span>
+                    <span class="prof__createdAt">1 month ago</span>
+                    <button class="reply">
+                      <i class="fa-solid fa-reply"></i>
+                      <span>Reply</span>
+                    </button>
+                  </div>
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo vitae tempora maiores, velit, facere alias vero
+                    veniam odit nam necessitatibus eaque enim possimus,
+                    cupiditate perferendis sequi nulla? Aliquid laborum
+                    doloremque molestias fugit eveniet eos pariatur, delectus
+                    nihil, aut suscipit amet?
+                  </div>
+                </div>
+                <div class="recommendation">
+                  <span class="plus">+</span>
+                  <span class="num">0</span>
+                  <span class="minus">-</span>
+                </div>
               </div>
-              <div class="content"></div>
+              <div class="add-comment add-reply">
+                <span class="user-img"></span>
+                <textarea rows="4" class="reply-content"></textarea>
+                <button class="reply-btn">REPLY</button>
+              </div>
             </div>
-            <div class="recommendation">
-              <span class="plus">+</span>
-              <span class="num">0</span>
-              <span class="minus">-</span>
+            <div class="replies">
+              <div class="comment reply">
+                <div class="contents">
+                  <div class="profile">
+                    <span class="prof__img"></span>
+                    <span class="prof__name">sample name</span>
+                    <span class="prof__createdAt">1 month ago</span>
+                    <button class="reply">
+                      <i class="fa-solid fa-reply"></i>
+                      <span>Reply</span>
+                    </button>
+                  </div>
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo vitae tempora maiores, velit, facere alias vero
+                    veniam odit nam necessitatibus eaque enim possimus,
+                    cupiditate perferendis sequi nulla? Aliquid laborum
+                    doloremque molestias fugit eveniet eos pariatur, delectus
+                    nihil, aut suscipit amet?
+                  </div>
+                </div>
+                <div class="recommendation">
+                  <span class="plus">+</span>
+                  <span class="num">0</span>
+                  <span class="minus">-</span>
+                </div>
+              </div>
+              <div class="comment reply">
+                <div class="contents">
+                  <div class="profile">
+                    <span class="prof__img"></span>
+                    <span class="prof__name">sample name</span>
+                    <span class="prof__createdAt">1 month ago</span>
+                    <button class="reply">
+                      <i class="fa-solid fa-reply"></i>
+                      <span>Reply</span>
+                    </button>
+                  </div>
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo vitae tempora maiores, velit, facere alias vero
+                    veniam odit nam necessitatibus eaque enim possimus,
+                    cupiditate perferendis sequi nulla? Aliquid laborum
+                    doloremque molestias fugit eveniet eos pariatur, delectus
+                    nihil, aut suscipit amet?
+                  </div>
+                </div>
+                <div class="recommendation">
+                  <span class="plus">+</span>
+                  <span class="num">0</span>
+                  <span class="minus">-</span>
+                </div>
+              </div>
+              <div class="add-comment add-reply">
+                <span class="user-img"></span>
+                <textarea rows="4" class="reply-content"></textarea>
+                <button class="reply-btn">REPLY</button>
+              </div>
+            </div>
+            <div class="add-repies-section add-comment">
+              <span class="user-img"></span>
+              <textarea rows="4" class="reply-content"></textarea>
+              <button class="reply-btn">REPLY</button>
             </div>
           </div>
-          <div class="addReply">
-            <span class="user-img"></span>
-            <span class="reply-content"></span>
-            <button class="reply">REPLY</button>
-          </div>
+          <!--  -->
+        </div>
+        <div class="add_item add-comment">
+          <span class="user-img"></span>
+          <textarea rows="4" class="reply-content"></textarea>
+          <button class="reply-btn">SEND</button>
         </div>
       </main>
-      <div class="dim">
-        <div class="dim__delete">
-          <div class="delete__title">Delete comment</div>
-          <div class="delete__texts">
-            Are you sure you want to delete this comment? This will remove the
-            comment and can't be undone.
-          </div>
-          <div class="btns">
-            <button class="delete">YES, DELETE</button>
-            <button class="delete cancel">NO, CANCEL</button>
-          </div>
-        </div>
-        <div class="dim__bg"></div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="dim">
+      <div class="dim__delete">
+        <div class="delete__title">Delete comment</div>
+        <div class="delete__texts">
+          Are you sure you want to delete this comment? This will remove the
+          comment and can't be undone.
+        </div>
+        <div class="btns">
+          <button class="delete">YES, DELETE</button>
+          <button class="delete cancel">NO, CANCEL</button>
+        </div>
+      </div>
+      <div class="dim__bg"></div>
     </div>
   </body>
 </html>
