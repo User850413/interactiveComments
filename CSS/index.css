@@ -7,4 +7,196 @@
   --grayish-blue: hsl(211, 10%, 45%);
   --very-light-gray: hsl(228, 33%, 97%);
   --white: #fff;
+  --dim-bg: rgba(0, 0, 0, 0.5);
+  --main-font: "Rubik", sans-serif;
+}
+body {
+  background-color: var(--very-light-gray);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+  max-width: 960px;
+  margin-top: 100px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* comment bubble (전체) */
+.comment,
+.add-comment {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+/* item - comment  */
+.comment {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+/* comment - contents */
+.comment .contents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* contents - profile */
+.profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.prof__img {
+  background-color: blue;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.prof__name {
+  font-weight: 600;
+}
+.prof__createdAt {
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+.profile > button {
+  margin-left: auto;
+  color: var(--moderate-blue);
+  background-color: var(--white);
+  font-weight: 800;
+}
+
+/* comment - recommendation  */
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--very-light-gray);
+  height: max-content;
+  gap: 5px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.recommendation span {
+  font-weight: 700;
+  color: var(--light-grayish-blue);
+  cursor: pointer;
+}
+.recommendation span:hover {
+  color: var(--moderate-blue);
+}
+.recommendation span:nth-child(2) {
+  color: var(--moderate-blue);
+  cursor: default;
+}
+
+/* item - replies section */
+.replies-section {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* replies-section replies */
+.replies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* add-comment 하위항목 */
+.add-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.add-comment .user-img {
+  background-color: blue;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.add-comment .reply-content {
+  border: 1px solid var(--very-light-gray);
+  flex-grow: 1;
+  padding: 10px 20px;
+  font-family: var(--main-font);
+  border-radius: 10px;
+  height: min-content;
+}
+.add-comment .reply-content:focus {
+  outline: 1px solid var(--grayish-blue);
+}
+.add-comment button.reply-btn {
+  background-color: var(--moderate-blue);
+  color: var(--white);
+  padding: 15px 25px;
+  border-radius: 7px;
+}
+
+/* dim */
+.dim {
+  visibility: hidden;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.dim__bg {
+  background-color: var(--dim-bg);
+  width: 100%;
+  height: 100%;
+}
+.dim__delete {
+  position: absolute;
+  background-color: var(--white);
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.delete__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+.delete__texts {
+  font-size: 1.5rem;
+  color: var(--grayish-blue);
+  line-height: 1.5;
+}
+.dim .btns {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  margin: 0 auto;
+}
+.dim .btns .delete {
+  padding: 13px 30px;
+  border-radius: 7px;
+  background-color: var(--soft-red);
+  color: var(--white);
+  font-family: var(--main-font);
+}
+.dim .btns .delete.cancel {
+  background-color: var(--grayish-blue);
 }
