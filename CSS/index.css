@@ -200,3 +200,10 @@ body {
 .modal .btns .delete.cancel {
   background-color: var(--grayish-blue);
 }
+
+/* attribution */
+.attribution {
+  font-size: 1.3rem;
+  width: max-content;
+  margin: 50px auto;
+}
